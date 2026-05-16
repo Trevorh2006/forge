@@ -1,0 +1,1 @@
+Branching is to keep the main branch free of any bad code. It should always be kept in a working state.
