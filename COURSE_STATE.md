@@ -5,7 +5,7 @@
 - **Lesson:** 01
 - **Track:** A — Workflow & Engineering Foundation
 - **Title:** Forge Foundation
-- **Status:** Not started
+- **Status:** Lesson 01 complete
 
 ## Course overview
 
@@ -26,12 +26,12 @@
 - **OS:** macOS, Apple Silicon
 - **Python version:** [fill after lesson 5]
 - **uv version:** [fill after lesson 7]
-- **Forge repo path:** [fill after lesson 1]
+- **Forge repo path:** ~/forge
 - **Virtual environment:** [fill after lesson 7]
 
 ## Last session
 
-- **Date:** [fill after first session]
+- **Date:** 16-05-2026
 - **Completed:** Nothing yet
 - **Ended on:** Course not yet started
 

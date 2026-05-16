@@ -2,18 +2,15 @@
 
 ## Immediate next action
 
-Start Lesson 01 — Forge Foundation.
+Start Lesson 02 — Git Beyond Basics.
 
-Open a fresh session, paste the resume prompt template with Lesson 01 details filled in, and begin.
+Open a fresh session, paste the resume prompt template with Lesson 02 details filled in, and begin.
 
-## Lesson 01 scope
+## Lesson 02 scope
 
-- Create the Forge GitHub repo on github.com
-- Define the folder structure: src/, tests/, docs/, agents/
-- Add .gitkeep to each empty folder
-- Copy all six course files into the repo root
-- First commit and push
-- Confirm everything is visible on GitHub
+- **Subject:** Branching, merging, resolving conflicts, reading history, using Git as a checkpoint system throughout the course
+- **Outcome:** Create a feature branch, make changes, merge back, read the log cleanly
+
 
 ## After each lesson
 
