@@ -2,10 +2,10 @@
 
 ## Current position
 
-- **Lesson:** 01
-- **Track:** A — Workflow & Engineering Foundation
+- **Lesson:** 03
+- **Track:** A — Testing Fundamentals
 - **Title:** Forge Foundation
-- **Status:** Lesson 01 complete
+- **Status:** Lesson 03 not yet started
 
 ## Course overview
 
@@ -24,7 +24,7 @@
 ## Environment
 
 - **OS:** macOS, Apple Silicon
-- **Python version:** [fill after lesson 5]
+- **Python version:** 3.14.4
 - **uv version:** [fill after lesson 7]
 - **Forge repo path:** ~/forge
 - **Virtual environment:** [fill after lesson 7]
@@ -32,7 +32,7 @@
 ## Last session
 
 - **Date:** 16-05-2026
-- **Completed:** Nothing yet
+- **Completed:** Lesson 02
 - **Ended on:** Course not yet started
 
 ## Blockers

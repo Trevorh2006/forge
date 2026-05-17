@@ -14,7 +14,14 @@ A record of every completed lesson. Updated at the end of each session.
 - **Committed:** yes
 - **Notes:** SSH auth set up from scratch
 ```
-
+```
+### Lesson 02 — Git Beyond Basics
+- **Date:** 16 May 2025
+- **Track:** A
+- **Outcome:** Created branch of main, committed code and merged code in to main. 
+- **Committed:** yes
+- **Notes:** 
+```
 ---
 
 ## Completed lessons
