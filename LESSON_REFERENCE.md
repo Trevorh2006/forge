@@ -91,76 +91,11 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 03 — Testing Fundamentals
-- **Subject:** pytest in depth — what to test, test structure, fixtures, parametrize, running subsets, reading failures
-- **Outcome:** A proper test suite for a small example module, all passing
-- **Freshness check:** Latest pytest version and fixture best practices
-
-#### Section 1 — Why testing matters for this course (10 min)
-- Every piece of Forge code will be tested as it is written — not after
-- What a test actually is: a function that asserts expected behaviour
-- The cost of not testing in an AI system — silent failures, wrong answers, broken pipelines
-
-#### Section 2 — Writing the first tests (15 min)
-- Install pytest, write a trivial passing test, run it
-- Read the output — understand what passing and failing look like
-- Write a deliberately failing test, read the failure output carefully
-- Understand what pytest is actually doing when it runs
-
-#### Section 3 — Fixtures (15 min)
-- What a fixture is — shared setup that tests can depend on
-- Write a fixture that provides a sample data object
-- Use it across multiple tests — understand why this is better than repeating setup
-- Understand fixture scope: function, module, session
-
-#### Section 4 — Parametrize and running subsets (15 min)
-- parametrize — testing the same function with multiple inputs in one declaration
-- Running a single test file, a single test, all tests matching a keyword
-- Understanding marks — skip, xfail
-- Reading a test summary — what to look at first when something fails
-
-#### Section 5 — Update state files (5 min)
-- Update all state files, commit, push
-
----
-
-### Lesson 04 — Testing for AI Code
-- **Subject:** Mocking API calls, handling non-deterministic output, integration vs unit tests
-- **Outcome:** Mock an LLM API call in a test — no real API required, fully reproducible
-- **Freshness check:** Latest pytest-mock and responses library versions
-
-#### Section 1 — The problem with testing AI code (10 min)
-- LLM output is non-deterministic — the same input rarely gives the same output
-- API calls cost money and can fail — tests cannot depend on live APIs
-- How do you test something you cannot fully predict?
-
-#### Section 2 — Mocking with pytest-mock (20 min)
-- What a mock is — a fake object that behaves like the real thing
-- Install pytest-mock, mock a simple function, verify it was called correctly
-- Mock an OpenAI API call — return a fixed fake response
-- Understand why this makes tests fast, free, and reproducible
-
-#### Section 3 — Testing non-deterministic output (15 min)
-- Strategies: test structure not content, test boundaries, test failure modes
-- Write a test that verifies an LLM response has the right shape without checking exact words
-- Test that a function handles an empty response gracefully
-
-#### Section 4 — Unit vs integration tests (10 min)
-- Unit: one function in isolation, mocked dependencies
-- Integration: multiple real components working together
-- Where each belongs in Forge's test suite
-- The rule: unit tests run always, integration tests run explicitly
-
-#### Section 5 — Update state files (5 min)
-- Update all state files, commit, push
-
----
-
 ## Track B — Python for AI Engineering
 
 ---
 
-### Lesson 05 — Python Foundations I
+### Lesson 03 — Python Foundations I
 - **Subject:** Python vs C# — syntax, types, variables, functions, comprehensions in depth
 - **Outcome:** A Python script that reads filenames and filters by extension using comprehensions
 - **Freshness check:** Current Python stable version
@@ -194,7 +129,7 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 06 — Python Foundations II
+### Lesson 04 — Python Foundations II
 - **Subject:** Classes, dataclasses, type hints, generators, iterators, lazy evaluation
 - **Outcome:** A typed CodeFile dataclass and a generator that yields files one at a time
 - **Freshness check:** Python dataclasses and generator docs for current best practice
@@ -228,7 +163,7 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 07 — Python Project Structure
+### Lesson 05 — Python Project Structure
 - **Subject:** uv, virtual environments, pyproject.toml, package imports, logging, config with .env
 - **Outcome:** Forge is a proper Python package — importable, configured, logging to console
 - **Freshness check:** Latest uv docs and python-dotenv version
@@ -264,7 +199,7 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 08 — File I/O and Data Formats
+### Lesson 06 — File I/O and Data Formats
 - **Subject:** Reading and writing files, pathlib, JSON, CSV, handling encodings
 - **Outcome:** A script that reads all .py and .cs files from a local folder safely
 - **Freshness check:** Python pathlib and json module current docs
@@ -297,7 +232,7 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 09 — Error Handling and Resilience
+### Lesson 07 — Error Handling and Resilience
 - **Subject:** Exceptions, try/except patterns, retries with exponential backoff, defensive coding
 - **Outcome:** A resilient file reader that retries on failure and logs errors without crashing
 - **Freshness check:** tenacity library version for retry patterns
@@ -332,7 +267,7 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 10 — Decorators and Functional Patterns
+### Lesson 08 — Decorators and Functional Patterns
 - **Subject:** How decorators work, writing your own, map/filter, closures
 - **Outcome:** A @retry and @timed decorator applied to real Forge functions
 - **Freshness check:** functools docs and current decorator patterns
@@ -367,7 +302,7 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 11 — Async and Concurrency
+### Lesson 09 — Async and Concurrency
 - **Subject:** async/await, event loops, aiohttp, running concurrent API calls
 - **Outcome:** Fetch three GitHub files concurrently — measure speed vs sequential
 - **Freshness check:** Latest asyncio and aiohttp docs
@@ -402,7 +337,7 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 12 — NumPy Fundamentals
+### Lesson 10 — NumPy Fundamentals
 - **Subject:** Arrays, shapes, dtypes, broadcasting, vectorised operations
 - **Outcome:** Implement vector operations and verify with NumPy
 - **Freshness check:** Latest NumPy version and any API changes
@@ -437,7 +372,7 @@ Each lesson is structured into timed sections totalling one hour.
 
 ---
 
-### Lesson 13 — HTTP Fundamentals
+### Lesson 11 — HTTP Fundamentals
 - **Subject:** How HTTP works — requests, responses, status codes, headers, authentication
 - **Outcome:** Make authenticated and unauthenticated requests, handle errors by status code
 - **Freshness check:** Latest httpx and requests library versions
@@ -470,6 +405,68 @@ Each lesson is structured into timed sections totalling one hour.
 #### Section 5 — Update state files (5 min)
 - Update all state files, commit, push
 
+### Lesson 12 — Testing Fundamentals
+- **Subject:** pytest in depth — what to test, test structure, fixtures, parametrize, running subsets, reading failures
+- **Outcome:** A proper test suite for a small example module, all passing
+- **Freshness check:** Latest pytest version and fixture best practices
+
+#### Section 1 — Why testing matters for this course (10 min)
+- Every piece of Forge code will be tested as it is written — not after
+- What a test actually is: a function that asserts expected behaviour
+- The cost of not testing in an AI system — silent failures, wrong answers, broken pipelines
+
+#### Section 2 — Writing the first tests (15 min)
+- Install pytest, write a trivial passing test, run it
+- Read the output — understand what passing and failing look like
+- Write a deliberately failing test, read the failure output carefully
+- Understand what pytest is actually doing when it runs
+
+#### Section 3 — Fixtures (15 min)
+- What a fixture is — shared setup that tests can depend on
+- Write a fixture that provides a sample data object
+- Use it across multiple tests — understand why this is better than repeating setup
+- Understand fixture scope: function, module, session
+
+#### Section 4 — Parametrize and running subsets (15 min)
+- parametrize — testing the same function with multiple inputs in one declaration
+- Running a single test file, a single test, all tests matching a keyword
+- Understanding marks — skip, xfail
+- Reading a test summary — what to look at first when something fails
+
+#### Section 5 — Update state files (5 min)
+- Update all state files, commit, push
+
+---
+
+### Lesson 13 — Testing for AI Code
+- **Subject:** Mocking API calls, handling non-deterministic output, integration vs unit tests
+- **Outcome:** Mock an LLM API call in a test — no real API required, fully reproducible
+- **Freshness check:** Latest pytest-mock and responses library versions
+
+#### Section 1 — The problem with testing AI code (10 min)
+- LLM output is non-deterministic — the same input rarely gives the same output
+- API calls cost money and can fail — tests cannot depend on live APIs
+- How do you test something you cannot fully predict?
+
+#### Section 2 — Mocking with pytest-mock (20 min)
+- What a mock is — a fake object that behaves like the real thing
+- Install pytest-mock, mock a simple function, verify it was called correctly
+- Mock an OpenAI API call — return a fixed fake response
+- Understand why this makes tests fast, free, and reproducible
+
+#### Section 3 — Testing non-deterministic output (15 min)
+- Strategies: test structure not content, test boundaries, test failure modes
+- Write a test that verifies an LLM response has the right shape without checking exact words
+- Test that a function handles an empty response gracefully
+
+#### Section 4 — Unit vs integration tests (10 min)
+- Unit: one function in isolation, mocked dependencies
+- Integration: multiple real components working together
+- Where each belongs in Forge's test suite
+- The rule: unit tests run always, integration tests run explicitly
+
+#### Section 5 — Update state files (5 min)
+- Update all state files, commit, push
 ---
 
 ### Lesson 14 — GitHub API I

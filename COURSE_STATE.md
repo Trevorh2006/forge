@@ -3,7 +3,7 @@
 ## Current position
 
 - **Lesson:** 03
-- **Track:** A — Testing Fundamentals
+- **Track:** B — Python Foundations I.
 - **Title:** Forge Foundation
 - **Status:** Lesson 03 not yet started
 

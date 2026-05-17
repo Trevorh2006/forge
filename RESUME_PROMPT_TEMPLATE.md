@@ -75,7 +75,7 @@ None yet.
 ## Current position
 
 - **Lesson:** 03
-- **Track:** A — Testing Fundamentals
+- **Track:** B — Python Foundations I.
 - **Title:** Forge Foundation
 - **Status:** Lesson 03 not yet started
 
@@ -117,41 +117,49 @@ None
 
 ## Immediate next action
 
-Start Lesson 03 — Testing Fundamentals.
+Start Lesson 03 — Python Foundations I.
 
 Open a fresh session, paste the resume prompt template with Lesson 02 details filled in, and begin.
 
 ## Lesson 03 scope
 
-- **Subject:** pytest in depth — what to test, test structure, fixtures, parametrize, running subsets, reading failures
-- **Outcome:** A proper test suite for a small example module, all passing
-- **Freshness check:** Latest pytest version and fixture best practices
+- **Subject:** Python vs C# — syntax, types, variables, functions, comprehensions in depth
+- **Outcome:** A Python script that reads filenames and filters by extension using comprehensions
+- **Freshness check:** Current Python stable version
 
-#### Section 1 — Why testing matters for this course (10 min)
-- Every piece of Forge code will be tested as it is written — not after
-- What a test actually is: a function that asserts expected behaviour
-- The cost of not testing in an AI system — silent failures, wrong answers, broken pipelines
+#### Section 1 — Python vs C# mental model (10 min)
+- Interpreted vs compiled — what this means in practice on a Mac
+- Dynamic typing — no type declarations required, but type hints available
+- Indentation as syntax — not style, it is the structure
+- No semicolons, no braces — what replaces them and why
 
-#### Section 2 — Writing the first tests (15 min)
-- Install pytest, write a trivial passing test, run it
-- Read the output — understand what passing and failing look like
-- Write a deliberately failing test, read the failure output carefully
-- Understand what pytest is actually doing when it runs
+#### Section 2 — Types, variables, and functions (15 min)
+- int, float, str, bool, None — and how they differ from C# equivalents
+- def — writing functions, default arguments, keyword arguments
+- Return values — Python always returns something (None if not specified)
+- The difference between print() and return — a common early confusion
 
-#### Section 3 — Fixtures (15 min)
-- What a fixture is — shared setup that tests can depend on
-- Write a fixture that provides a sample data object
-- Use it across multiple tests — understand why this is better than repeating setup
-- Understand fixture scope: function, module, session
+#### Section 3 — Lists and dicts (10 min)
+- List: ordered, mutable, zero-indexed — similar to C# List<T>
+- Dict: key-value pairs — similar to Dictionary<K,V>
+- Common operations: append, pop, get, keys, values, items
 
-#### Section 4 — Parametrize and running subsets (15 min)
-- parametrize — testing the same function with multiple inputs in one declaration
-- Running a single test file, a single test, all tests matching a keyword
-- Understanding marks — skip, xfail
-- Reading a test summary — what to look at first when something fails
+#### Section 4 — Comprehensions in depth (20 min)
+- List comprehension: [x for x in items if condition]
+- Dict comprehension: {k: v for k, v in pairs}
+- Why this matters: ML and AI code is full of comprehensions — fluency is essential
+- Build the file filter script using comprehensions — filter a list of filenames by extension
+- Test it with pytest
 
 #### Section 5 — Update state files (5 min)
 - Update all state files, commit, push
+
+
+## After each lesson
+
+Update this file with the next immediate action before committing.
+One line is enough: what to do, which lesson, what it covers.
+
 
 
 ## After each lesson
