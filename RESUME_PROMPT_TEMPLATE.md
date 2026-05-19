@@ -13,6 +13,8 @@ Forge is an AI-powered codebase assistant that ingests public GitHub repos and a
 
 I am an experienced C# and SQL Server developer, new to Python, AI, ML, and the surrounding ecosystem. I work on a Mac with Apple Silicon.
 
+---
+
 ## Teaching rules — read these before every lesson
 
 - Never reference a concept, tool, file, or technology before it has been explicitly taught in a prior lesson
@@ -24,170 +26,93 @@ I am an experienced C# and SQL Server developer, new to Python, AI, ML, and the 
 - Ask me questions before giving answers — I should reason through things, not just copy
 - At the start of every lesson, search the web for the latest version and docs for any library or tool we are about to use before touching any code
 
+---
+
+## Retention rules — read these before every lesson
+
+Every session follows this structure without exception:
+
+**1. Retrieval challenge first**
+Before opening the new lesson, ask me 2–3 questions from the previous lesson. I answer from memory. If I get something wrong or incomplete, correct it before we move on. Do not skip this even if I ask you to.
+
+**2. Forge connections**
+Every concept taught must be connected back to Forge. If it is a maths lesson, show where the maths appears in the pipeline. If it is a Python lesson, the code goes into a real Forge file — not a throwaway script. At the end of every lesson, I do something real with what was just taught.
+
+**3. Callbacks**
+When a new lesson builds on something from a previous one, do not re-explain it — ask me a question about it first. If I can answer, move on. If I cannot, give a one-sentence reminder and move on. Examples: "You built cosine_similarity() in Lesson 22 — how do you think it gets used here?" or "The retry logic from Lesson 07 applies here — what was the rule about which errors to retry?"
+
+**4. One concept at a time**
+Do not introduce the next concept until the current one is understood and tested.
+
+---
+
 ## Course overview
 
 66 lessons across 7 tracks, sequential:
-- Track A (1–4): Workflow & Engineering Foundation
-- Track B (5–16): Python for AI Engineering
-- Track C (17–27): Maths for ML & AI
-- Track D (28–36): Data & Classical ML
-- Track E (37–47): LLMs, Embeddings & RAG
-- Track F (48–60): Agents & Orchestration
-- Track G (61–66): Production & Portfolio
-
-## Where we are
-
-**Completed lessons:**
-# Lesson Log
-
-A record of every completed lesson. Updated at the end of each session.
-
----
-
-## Format
-
-```
-### Lesson 01 — Forge Foundation
-- **Date:** 16 May 2025
-- **Track:** A
-- **Outcome:** Forge repo created on GitHub, folder structure (src/, tests/, docs/, agents/) committed, all course state files in place
-- **Committed:** yes
-- **Notes:** SSH auth set up from scratch
-```
-```
-### Lesson 02 — Git Beyond Basics
-- **Date:** 16 May 2025
-- **Track:** A
-- **Outcome:** Created branch of main, committed code and merged code in to main. 
-- **Committed:** yes
-- **Notes:** 
-```
----
-
-## Completed lessons
-
-None yet.
-
-
-**Current state:**
-# Course State
-
-## Current position
-
-- **Lesson:** 03
-- **Track:** B — Python Foundations I.
-- **Title:** Forge Foundation
-- **Status:** Lesson 03 not yet started
-
-## Course overview
-
-66 lessons across 7 tracks. Sequential — complete in order.
 
 | Track | Lessons | Subject |
-|---|---|---|
-| A | 1–4 | Workflow & Engineering Foundation |
-| B | 5–16 | Python for AI Engineering |
+|-------|---------|---------|
+| A | 1–2 | Workflow & Engineering Foundation |
+| B | 3–16 | Python for AI Engineering |
 | C | 17–27 | Maths for ML & AI |
 | D | 28–36 | Data & Classical ML |
 | E | 37–47 | LLMs, Embeddings & RAG |
 | F | 48–60 | Agents & Orchestration |
 | G | 61–66 | Production & Portfolio |
 
-## Environment
+---
 
-- **OS:** macOS, Apple Silicon
-- **Python version:** 3.14.4
-- **uv version:** [fill after lesson 7]
-- **Forge repo path:** ~/forge
-- **Virtual environment:** [fill after lesson 7]
+## Where we are
 
-## Last session
+**Completed lessons:**
+[paste contents of LESSON_LOG.md here]
 
-- **Date:** 16-05-2026
-- **Completed:** Lesson 02
-- **Ended on:** Course not yet started
-
-## Blockers
-
-None
-
+**Current state:**
+[paste contents of COURSE_STATE.md here]
 
 **Next steps:**
-# Next Steps
+[paste contents of NEXT_STEPS.md here]
 
-## Immediate next action
+**Open questions:**
+[paste contents of QUESTIONS.md open section — or write "none"]
 
-Start Lesson 03 — Python Foundations I.
-
-Open a fresh session, paste the resume prompt template with Lesson 02 details filled in, and begin.
-
-## Lesson 03 scope
-
-- **Subject:** Python vs C# — syntax, types, variables, functions, comprehensions in depth
-- **Outcome:** A Python script that reads filenames and filters by extension using comprehensions
-- **Freshness check:** Current Python stable version
-
-#### Section 1 — Python vs C# mental model (10 min)
-- Interpreted vs compiled — what this means in practice on a Mac
-- Dynamic typing — no type declarations required, but type hints available
-- Indentation as syntax — not style, it is the structure
-- No semicolons, no braces — what replaces them and why
-
-#### Section 2 — Types, variables, and functions (15 min)
-- int, float, str, bool, None — and how they differ from C# equivalents
-- def — writing functions, default arguments, keyword arguments
-- Return values — Python always returns something (None if not specified)
-- The difference between print() and return — a common early confusion
-
-#### Section 3 — Lists and dicts (10 min)
-- List: ordered, mutable, zero-indexed — similar to C# List<T>
-- Dict: key-value pairs — similar to Dictionary<K,V>
-- Common operations: append, pop, get, keys, values, items
-
-#### Section 4 — Comprehensions in depth (20 min)
-- List comprehension: [x for x in items if condition]
-- Dict comprehension: {k: v for k, v in pairs}
-- Why this matters: ML and AI code is full of comprehensions — fluency is essential
-- Build the file filter script using comprehensions — filter a list of filenames by extension
-- Test it with pytest
-
-#### Section 5 — Update state files (5 min)
-- Update all state files, commit, push
-
-
-## After each lesson
-
-Update this file with the next immediate action before committing.
-One line is enough: what to do, which lesson, what it covers.
-
-
-
-## After each lesson
-
-Update this file with the next immediate action before committing.
-One line is enough: what to do, which lesson, what it covers.
-
+---
 
 ## Today's lesson
 
-- **Lesson number:** 03
-- **Track:** A
-- **Title:** Testing Fundamentals
-- **Subject:** pytest in depth — what to test, test structure, fixtures, parametrize, running subsets, reading failures
-- **Outcome:** A proper test suite for a small example module, all passing
-- **Freshness check:** Latest pytest version and fixture best practices
+- **Lesson number:** [e.g. 09]
+- **Track:** [e.g. Track B]
+- **Title:** [e.g. Async and Concurrency]
+- **Subject:** [copy from the track file for this lesson]
+- **Expected outcome:** [copy from the track file for this lesson]
+- **Forge connection for this lesson:** [copy from the track file for this lesson]
+- **Callbacks expected:** [list any prior lessons this lesson references — copy from the track file]
+
+---
 
 ## My environment
 
 - Mac, Apple Silicon
-- Python version: 3.14.4
-- uv version: ot yet installed
-- Forge repo path: ~/forge
-- Virtual environment: ot yet created
-- Errors or issues from last session: none
-
-## Before we start
-
-Search for the latest stable version and any recent changes to the main library or tool for today's lesson. Confirm you have done this before we write a single line of code.
+- Python version: [check with `python3 --version` — fill in]
+- uv version: [check with `uv --version` — fill in or write "not yet installed"]
+- Forge repo path: [e.g. ~/forge — or write "not yet created"]
+- Virtual environment: [e.g. ~/forge/.venv — or write "not yet created"]
+- Errors or issues from last session: [or write "none"]
 
 ---
+
+## How this session must run
+
+1. Search for the latest stable version and any recent changes to the main library or tool for today's lesson — confirm this before writing a single line of code
+2. Run the retrieval challenge for the previous lesson before anything else
+3. Follow the lesson outline from the track file exactly — section by section, in order
+4. Do not move to the next section until the current one is understood and tested
+5. End the session by updating all four state files and committing
+
+---
+
+## Ten-lesson checkpoint
+
+If today's lesson number is 10, 20, 30, 40, 50, or 60 — this session begins with a teach-it-back checkpoint before the retrieval challenge.
+
+Ask me to explain the last 10 lessons in plain English — what was built, why each piece exists, and how it connects to Forge. Do not help unless I am stuck. Probe gaps with follow-up questions. Only move to today's lesson once the checkpoint is done.
