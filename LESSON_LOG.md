@@ -30,6 +30,14 @@ A record of every completed lesson. Updated at the end of each session.
 - **Committed:** yes
 - **Notes:**
 ```
+```
+### Lesson 04 — Python Foundations II
+- **Date:** 19 May 2026
+- **Track:** B
+- **Outcome:** learnt classes, dataclasses, iterators and generators.
+- **Committed:** yes
+- **Notes:**
+```
 ---
 
 ## Completed lessons

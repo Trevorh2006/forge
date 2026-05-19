@@ -2,10 +2,10 @@
 
 ## Current position
 
-- **Lesson:** 04
-- **Track:** B — Python Foundations I.
+- **Lesson:** 05
+- **Track:** B — Python Project Structure
 - **Title:** Forge Foundation
-- **Status:** Lesson 04 not yet started
+- **Status:** Lesson 05 not yet started
 
 ## Course overview
 

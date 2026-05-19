@@ -97,6 +97,14 @@ A record of every completed lesson. Updated at the end of each session.
 - **Committed:** yes
 - **Notes:**
 ```
+```
+### Lesson 04 — Python Foundations II
+- **Date:** 19 May 2026
+- **Track:** B
+- **Outcome:** learnt classes, dataclasses, iterators and generators.
+- **Committed:** yes
+- **Notes:**
+```
 ---
 
 ## Completed lessons
@@ -108,10 +116,10 @@ None yet.
 
 ## Current position
 
-- **Lesson:** 04
-- **Track:** B — Python Foundations I.
+- **Lesson:** 05
+- **Track:** B — Python Project Structure
 - **Title:** Forge Foundation
-- **Status:** Lesson 04 not yet started
+- **Status:** Lesson 05 not yet started
 
 ## Course overview
 
@@ -146,67 +154,59 @@ None yet.
 None
 
 
+
 **Next steps:**
 # Next Steps
 
 ## Immediate next action
 
-Start Lesson 04 — Python Foundations II
+Start Lesson 05 — Python Project Structure
 
 Open a fresh session, paste the resume prompt template with Lesson 02 details filled in, and begin.
 
-# Next Steps
+## Lesson 05 — Python Project Structure
 
-## Immediate next action
-
-Start Lesson 04 — Python Foundations II
-
-Open a fresh session, paste the resume prompt template with Lesson 02 details filled in, and begin.
-
-## Lesson 04 — Python Foundations II
-
-- **Subject:** Classes, dataclasses, type hints, generators, iterators, lazy evaluation
-- **Outcome:** A typed CodeFile dataclass and a generator that yields files one at a time
-- **Freshness check:** Python dataclasses and generator docs for current best practice
+- **Subject:** uv, virtual environments, pyproject.toml, package imports, logging, config with .env
+- **Outcome:** Forge is a proper Python package — importable, configured, logging to console
+- **Freshness check:** Latest uv docs and python-dotenv version
 
 ### Section 0 — Retrieval Challenge (5 min)
 The AI asks:
-1. What is the difference between print() and return in Python?
-2. How does a list comprehension differ from a for loop — when would you choose each?
-3. What is a dict in Python and what C# type is it closest to?
+1. What is the difference between a list and a generator in Python — when does the difference matter?
+2. What does the dataclass decorator actually do — what boilerplate does it replace?
+3. What does yield do and how does it differ from return?
 
 Answer from memory. Gaps are addressed before moving on.
 
-### Section 1 — Classes vs dataclasses (15 min)
-- A class in Python vs C# — same concept, different syntax
-- __init__, self — what they are and why they exist
-- dataclass decorator — eliminates boilerplate, auto-generates __init__, __repr__, __eq__
-- When to use a class vs a dataclass — dataclass for data containers, class for behaviour
+### Section 1 — Why project structure matters (5 min)
+- Scripts vs packages — the difference and when each is appropriate
+- Forge is a package: importable, testable, deployable
+- What makes a directory a Python package: __init__.py
 
-### Section 2 — Type hints (10 min)
-- Python is dynamically typed but type hints make code readable and tooling useful
-- str, int, float, bool, list[str], dict[str, int], Optional[str]
-- Type hints do not enforce at runtime — they are for humans and tools, not Python itself
-- Add type hints to the CodeFile dataclass
+### Section 2 — uv and virtual environments (15 min)
+- What a virtual environment is — isolated Python and dependencies per project
+- Why this matters: different projects need different library versions
+- Install uv, create a venv, activate it, understand what activation does
+- Install a package with uv, verify it is isolated to this project only
 
-### Section 3 — Iterators (10 min)
-- What an iterator is — an object that produces values one at a time
-- Why for loops work on lists, files, ranges — they are all iterators under the hood
-- The difference between a list (all values in memory) and an iterator (one at a time)
-- Why this matters for large codebases — loading 50,000 files at once is not practical
+### Section 3 — pyproject.toml (15 min)
+- The modern Python project configuration file — replaces setup.py and requirements.txt
+- name, version, dependencies, dev dependencies
+- How uv uses it — install all dependencies from the file with one command
+- Add pytest and python-dotenv as dependencies
 
-### Section 4 — Generators (15 min)
-- yield — what it does and how it differs from return
-- A generator function produces an iterator without storing everything in memory
-- Why ML pipelines use generators — datasets are often too large to load at once
-- Write a generator that yields CodeFile objects from a directory one at a time
-- Test it — verify it yields the right objects in the right order
+### Section 4 — Package imports and logging (15 min)
+- How Python finds modules — the import system explained
+- Relative vs absolute imports — which to use in Forge and why
+- Set up logging with a consistent format across all Forge modules
+- Log levels: DEBUG, INFO, WARNING, ERROR — when to use each
 
-### Section 5 — Update state files (5 min)
-- Commit src/models.py with the CodeFile dataclass and generator
-- **Forge connection:** CodeFile is the core data model Forge will use from here through to Track E. Every file fetched from GitHub will become a CodeFile object. Make sure the fields — path, language, size, sha, content — are designed for that purpose, not just the exercise.
+### Section 5 — Config with .env (10 min)
+- Load environment variables from .env using python-dotenv
+- .env is never committed — verify .gitignore covers it
+- Access config values safely — what to do when a required value is missing
+- **Forge connection:** The GitHub token and OpenAI key Forge will need in Lessons 14 and 37 both live in .env. Set up the .env structure now with placeholder keys so the pattern is already in place when the real keys are needed.
 - Update all four state files, commit, push
-
 ## After each lesson
 
 Update this file with the next immediate action before committing.
@@ -225,12 +225,12 @@ none
 
 ## Today's lesson
 
-- **Lesson number:** 03
+- **Lesson number:** 05
 - **Track:** B
-- **Title:** Python Foundations I
-- **Subject:** Python vs C# — syntax, types, variables, functions, list and dict comprehensions
-- **Outcome:** A Python script that reads filenames and filters by extension using comprehensions
-- **Freshness check:** Current Python stable version
+- **Title:** Python Project Structure
+- **Subject:** uv, virtual environments, pyproject.toml, package imports, logging, config with .env
+- **Outcome:** Forge is a proper Python package — importable, configured, logging to console
+- **Freshness check:** Latest uv docs and python-dotenv version
 - **Callbacks expected:** [list any prior lessons this lesson references — copy from the track file]
 
 ---
@@ -253,6 +253,7 @@ none
 3. Follow the lesson outline from the track file exactly — section by section, in order
 4. Do not move to the next section until the current one is understood and tested
 5. End the session by updating all four state files and committing
+6. DO NOT skip sections ever. Stay on track.
 
 ---
 
