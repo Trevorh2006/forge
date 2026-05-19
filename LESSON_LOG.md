@@ -22,6 +22,14 @@ A record of every completed lesson. Updated at the end of each session.
 - **Committed:** yes
 - **Notes:** 
 ```
+```
+### Lesson 03 — Python Foundations I
+- **Date:** 19 May 2026
+- **Track:** B
+- **Outcome:** filter_by_extension() built and committed to src/utils.py. Python vs C# mental model covered — interpreted vs compiled, dynamic typing, indentation as syntax, list comprehensions.
+- **Committed:** yes
+- **Notes:**
+```
 ---
 
 ## Completed lessons

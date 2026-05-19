@@ -2,10 +2,10 @@
 
 ## Current position
 
-- **Lesson:** 03
+- **Lesson:** 04
 - **Track:** B — Python Foundations I.
 - **Title:** Forge Foundation
-- **Status:** Lesson 03 not yet started
+- **Status:** Lesson 04 not yet started
 
 ## Course overview
 
@@ -31,8 +31,8 @@
 
 ## Last session
 
-- **Date:** 16-05-2026
-- **Completed:** Lesson 02
+- **Date:** 19-05-2026
+- **Completed:** Lesson 03
 - **Ended on:** Course not yet started
 
 ## Blockers
